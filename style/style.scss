@@ -1,0 +1,306 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+.favorite__page{
+    padding: 0px 35px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.container__header{
+    border-bottom: solid 1px #BABBC5;
+}
+.header__icon{
+    display: flex;
+    align-items: center;
+}
+.hamdurger{
+    display: none;
+}
+.favorite__wrapper{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.header__link-text{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    min-width: 134px;
+}
+.header__link-text:hover{
+    border-bottom: 3px solid #BABBC5;
+}
+.header__link-text:active{
+    color: #E71414;
+    border-color: #E71414;
+}
+@media (min-width:768px) and (max-width: 1024px){
+    .container{
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 984px;
+    }
+    .header__link-text{
+        min-width: 112px;
+        font-size: 12px;
+        line-height: 14px;
+    }
+}
+@media (min-width:320px) and (max-width: 574px){
+    .container{
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .header__icon{
+        max-width: 130px;
+        width: 100px;
+    }
+    .header__link{
+        display: none;
+    }
+}
+.banner{
+    background-image: url(../assets/header/img.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    padding: 230px 120px;
+}
+.container__banner{
+    position: relative;
+    z-index: 1;
+}
+.banner::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: #252B49;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+}
+.banner__title{
+    text-align: center;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 75px;
+    font-family: 'Raleway', sans-serif;
+    color: #FFFFFF;
+    margin-bottom: 31px;
+    text-transform: uppercase;
+}
+.banner__subtitle{
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 82px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.banner__btn{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: #FF4343;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    padding: 29px 91px;
+    text-transform: uppercase;
+}
+.banner__btn:hover{
+    background: #E71414;
+}
+.banner__btn:active{
+    background: #FF4343;
+}
+@media (min-width:768px) and (max-width: 1024px){
+    .container{
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 984px;
+    }
+    .banner__title{
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 56px; 
+        font-family: 'Raleway', sans-serif;
+        margin-bottom: 61px;
+    }
+    .banner__subtitle{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: 'Raleway', sans-serif;
+    }
+    .banner{
+        padding-top: 257px;
+        padding-bottom: 126px;
+    }
+    .banner__btn{
+       padding: 29px 64px;
+    }
+}
+@media (min-width:320px) and (max-width: 574px){
+    .container{
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .banner__title{
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 32px;
+    }
+    .banner{
+        padding-top: 106px;
+        padding-bottom: 52px;
+    }
+    .banner__subtitle{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 32px;
+    }
+    .banner__btn{
+        padding: 19px 40px;
+    }
+}
+.services{
+    padding-top: 127px;
+    padding-bottom: 133px;
+}
+.blocks__services{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 97px;
+}
+.services__icon{
+    display: flex;
+    justify-content: center;
+}
+.block__service{
+    max-width: 370px;
+    width: 100%;
+}
+.block__title-text{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+.block__subtitle-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+@media (min-width:768px) and (max-width: 1024px){
+    .container{
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 984px;
+    }
+    .services{
+        padding-top: 78px;
+        padding-bottom: 80px;
+    }
+    .block__service{
+        max-width: 304px;
+        width: 100%;
+    }
+    .services__icon{
+        width: 85px;
+        height: 85px;
+        margin: 0 auto;
+    }
+    .blocks__services{
+        column-gap: 20px;
+        row-gap: 49px;
+    }
+    .block__title-text{
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .block__subtitle-text{
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+@media (min-width:320px) and (max-width: 574px){
+    .container{
+        padding: 0 15px;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+    .services{
+        padding-top: 40px;
+        padding-bottom: 34px;
+    } 
+    .block__service{
+        max-width: 275px;
+        width: 100%;
+    }
+    .services__icon{
+        width: 75px;
+        height: 75px;
+        margin: 0 auto;
+    }
+    .blocks__services{
+        column-gap: 0px;
+        row-gap: 49px;
+    }
+    .block__title-text{
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .block__subtitle-text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+}
+.blocks__interior{
+    display: flex;
+    flex-wrap: wrap;
+}
+.block__interior-img{
+    width: 475px;
+    height: 400px;
+}
