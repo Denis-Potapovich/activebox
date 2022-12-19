@@ -1,0 +1,129 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    max-width: 984px;
+  }
+}
+@media (min-width: 320px) and (max-width: 574px) {
+  .container {
+    max-width: 280px;
+  }
+}
+
+.information {
+  background-color: #353C65;
+  padding-top: 46px;
+  padding-bottom: 41px;
+}
+.information__blocks {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 574px) {
+  .information__blocks {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.information__block {
+  max-width: 370px;
+  width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .information__block {
+    max-width: 315px;
+  }
+}
+@media (min-width: 320px) and (max-width: 574px) {
+  .information__block {
+    margin-bottom: 45px;
+  }
+}
+.information__title-text {
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 29px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .information__title-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.information__subtitle-text {
+  color: #FFFFFF;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .information__subtitle-text {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.information__block-icon {
+  padding-top: 19px;
+  display: flex;
+  justify-content: center;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+}
+
+.footer {
+  background: #2C3154;
+  padding-bottom: 24px;
+  padding-top: 24px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer {
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
+}
+.footer__wrap {
+  max-width: 370px;
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__wrap {
+    max-width: 314px;
+  }
+}
+.footer__text {
+  text-align: center;
+  color: #808080;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+.footer__span {
+  color: #FFFFFF;
+  font-family: "Raleway", sans-serif;
+}/*# sourceMappingURL=style.css.map */
