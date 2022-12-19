@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.persons{
+    margin-top: 114px;
+    margin-bottom: 114px;  
+}
+.person__wrapper{
+    display: flex;
+    column-gap: 30px;
+}
+.person__block{
+    width: calc((100% - 90px) / 3);
+}
+.person__photo{
+    margin-bottom: 30px;
+}
+.person__text-title{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 5px;
+}
+.person__job{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'Raleway', sans-serif;
+    color: #FF4343;
+    text-transform: uppercase;
+    margin-bottom: 17px;
+}
+.person__subtitle-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 37px;
+}
+.person__link-icon{
+    text-decoration: none;
+}
+@media (min-width:768px) and (max-width: 1024px){
+    .persons{
+        margin-top: 78px;
+        margin-bottom: 78px;
+    }
+    .person__wrapper{
+        column-gap: 25px;
+    }
+    .person__block{
+        width: calc((100% - 75px) / 3);
+    }
+    .person__photo{
+        width: 227px;
+        height: 227px;
+        margin-bottom: 25px;
+    }
+    .person__text-title{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 4.6px;
+    }
+    .person__job{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 22px;
+    }
+    .person__subtitle-text{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 39px;
+    }
+}
+@media (min-width:320px) and (max-width: 574px){
+    .person{
+        margin-top: 35px;
+        margin-bottom: 34px;
+    }
+    .person__wrapper{
+        column-gap: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        
+    }
+    .person__block{
+        width: none;
+    }
+    .person__photo{
+        width: 280px;
+        height: 227px;
+        margin-bottom: 25px;
+    }
+    .person__job{
+        margin-bottom: 38px;
+    }
+    .person__subtitle-text{
+        margin-bottom: 55px;
+    }
+}
